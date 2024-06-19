@@ -25,6 +25,10 @@ public class ShortenUrl {
         return redirectCount;
     }
 
+    public void increaseRedirectCount() {
+        this.redirectCount = this.redirectCount + 1;
+    }
+
     public static String generateShortenUrlKey() {
         String base56Characters = "23456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnpqrstuvwxyz";
         Random random = new Random();
